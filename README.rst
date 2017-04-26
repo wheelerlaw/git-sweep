@@ -147,6 +147,19 @@ immediately.
 
     Tell everyone to run `git fetch --prune` to sync with this remote.
     (you don't have to, yours is synced)
+    
+    
+Deleting local branches
+-----------
+
+You can also clean up local branches by using simple hack:
+
+:: 
+
+    $ cd myrepo
+    $ git remote add local $(pwd)
+    $ git-sweep cleanup --origin=local
+    
 
 Development
 -----------
@@ -167,7 +180,7 @@ To run the tests, bootstrap Buildout and run this command:
     ...
     $ ./bin/test
 
-We also use Tox_. It will run the tests for Python 2.6 and 2.7.
+We also use Tox_. It will run the tests for Python 2.7 and 3.5.
 
 ::
 
@@ -177,7 +190,7 @@ Requirements
 ------------
 
 * Git >= 1.7
-* Python >= 2.6
+* Python >= 2.7
 
 License
 -------

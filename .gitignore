@@ -1,15 +1,19 @@
 *.pyc
 
 .installed.cfg
-bin
-develop-eggs
+bin/
+develop-eggs/
 
 *.egg-info
 
-tmp
-build
-dist
+tmp/
+build/
+dist/
 .jig
-eggs
-parts
+eggs/
+parts/
 .tox
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
